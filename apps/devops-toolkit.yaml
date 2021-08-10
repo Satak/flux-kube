@@ -16,6 +16,6 @@ spec:
   targetNamespace: production
   values:
     image:
-      tag: 2.9.9
+      tag: 2.9.17
     ingress:
       host: 51.105.216.198
