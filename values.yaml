@@ -1,4 +1,0 @@
-image:
-  tag: 2.9.9
-ingress:
-  host: aks-samik-dns-9ba89391.hcp.westeurope.azmk8s.io
