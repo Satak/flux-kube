@@ -1,3 +1,3 @@
 # flux-kube
 
-Testing Flux and Kubernetes. Testing codespaces! 123
+Testing Flux and Kubernetes. Testing codespaces!
