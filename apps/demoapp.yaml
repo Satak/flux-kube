@@ -10,7 +10,7 @@ spec:
       chart: demoapp
       sourceRef:
         kind: GitRepository
-        name: devops-toolkit
+        name: demoapp
   install: {}
   interval: 30s
   targetNamespace: production
