@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: helm
+      chart: demoapp
       sourceRef:
         kind: GitRepository
         name: devops-toolkit
@@ -16,6 +16,4 @@ spec:
   targetNamespace: production
   values:
     image:
-      tag: 2.9.17
-    ingress:
-      host: 51.105.216.198
+      tag: latest
