@@ -1,0 +1,6 @@
+deployment:
+  image: satak/demoapp
+  tag: latest
+container:
+  port: 3000
+name: demoapp

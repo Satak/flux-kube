@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const port = 3000;
+const testData = process.env.TEST_DATA || 'no data set from TEST_DATA env';
 
 app.get('/api/items', (req, res) => {
   const data = [
@@ -12,6 +13,10 @@ app.get('/api/items', (req, res) => {
     {
       id: 2,
       name: 'second data',
+    },
+    {
+      id: 3,
+      name: testData,
     },
   ];
 

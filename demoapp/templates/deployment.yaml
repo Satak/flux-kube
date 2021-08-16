@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}
+  labels:
+    app: {{ .Values.name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+  template:
+    metadata:
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+      labels:
+        app: {{ .Values.name }}
+    spec:
+      containers:
+        - name: {{ .Values.name }}
+          image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }}
+          env:
+            - name: TEST_DATA
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Values.name }}
+                  key: test_data
+          ports:
+            - containerPort: {{ .Values.container.port }}
