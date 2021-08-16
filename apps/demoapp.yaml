@@ -14,6 +14,3 @@ spec:
   install: {}
   interval: 30s
   targetNamespace: production
-  values:
-    image:
-      tag: latest
