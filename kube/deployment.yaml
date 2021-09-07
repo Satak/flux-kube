@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: demoapp
-          image: satak/demoapp:latest
+          image: satak/demoapp:0.1.0
           ports:
             - containerPort: 3000
