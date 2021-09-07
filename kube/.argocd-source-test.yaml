@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - satak/demoapp:latest
