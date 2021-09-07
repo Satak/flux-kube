@@ -1,3 +1,4 @@
-# flux-kube
+# Demoapp
 
-Testing Flux and Kubernetes. Testing codespaces!
+Testing GitOps and Kubernetes with **koncrete** and **ArgoCD**
+<https://app.koncrete.dev/satak-space>
